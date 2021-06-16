@@ -1,0 +1,11 @@
+include __label-text/input__label-text.pug
+include __input/input__input.pug
+include __label/input__label.pug
+mixin input(modifier)
+  .input&attributes(attributes)
+    if modifier == undefined
+      - modifier = {"id": "empty__id"};
+    if modifier["id"] == undefined
+      - modifier["id"] = "empty__id";
+    +input__label(modifier)(for=modifier.id)
+    +input__input(modifier)(id=modifier.id)

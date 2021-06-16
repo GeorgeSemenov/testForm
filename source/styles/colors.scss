@@ -1,0 +1,34 @@
+/* no sense variables */
+$white: #ffffff;
+$gray: rgba(31, 32, 65, 0.25);
+$gray-dark  : rgba(31, 32, 65, 0.5);
+$gray-darker: rgba(31, 32, 65, 0.75);
+
+$purple     : #BC9CFF;
+$green      : #6FCF97;
+
+$black      : #1F2041;
+
+/* variables with sense */
+/* *********************************************************************** */
+
+$square-container__square--BGColor: $black;
+$square-container__square_color_purple--BGColor: $purple;
+$square-container__square_color_green--BGColor : $green;
+
+$header__sandwich-ico--BGColor: $purple;
+$header__sandwich-ico-after-before--BGColor: $green;
+
+$head-container__head--color: $gray;
+$head-container__description_style_body: $gray-darker;
+$head-container__description--color: $black;
+
+$text-field__title--color: $black;
+$text-field__description--color: $gray-dark;
+$text-field__input--color: $gray-darker;
+$text-field__input-placeholder--color: $gray;
+$text-field__input--BC : $gray;
+
+$toggle-item__text--color: $gray-darker;
+$toggle-item__slider--border: $purple;
+$toggle-item__slider--BGColor: $white;

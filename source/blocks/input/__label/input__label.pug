@@ -1,0 +1,4 @@
+mixin input__label(modifier)
+  label.input__label&attributes(attributes)
+    +input__label-text(modifier.regularLabelText)
+    +input__label-text(modifier.coloredLabelText)(class="input__label-text_colored_green")

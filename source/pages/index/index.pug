@@ -1,0 +1,14 @@
+include ../../blocks/favicon/favicon.pug
+include ../../blocks/input/input.pug
+doctype html
+html(lang="ru")
+  head
+    meta(charset = "utf-8")
+    meta(name="viewport", content="initial-scale=1.0, width=device-width")
+    title UIKit
+    //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
+    +favicon()
+  body
+    main
+      +input({
+      })
