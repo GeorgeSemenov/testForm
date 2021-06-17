@@ -1,4 +1,12 @@
 @import '__label-text/input__label-text';
 @import '__input/input__input';
 @import '__label/input__label';
-.input {}
+.input {
+  width: 320px;
+  font-family: 'Montserrat' ,"Arial" , "Sans-serif";
+  font-style: normal;
+  line-height: 130%;
+  @media (max-width: $md - 1px){
+    width: 280px;
+  }
+}
