@@ -1,1 +1,5 @@
-.input__label-text {}
+.input__label-text {
+  &_colored_green{
+    color: $input__label-text_colored_green--color;
+  }
+}
