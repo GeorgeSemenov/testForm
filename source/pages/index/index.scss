@@ -2,4 +2,9 @@
 @import "../../styles/allCommonStyles";
 
 /* Стили блоков */
-@import "../../blocks/input/input"
+@import "../../blocks/input/input";
+
+body {
+  padding-left: 100px;
+  padding-top: 100px;
+}

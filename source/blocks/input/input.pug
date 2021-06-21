@@ -1,3 +1,5 @@
+include __option-language/input__option-language.pug
+include __select-languages/input__select-languages.pug
 include __label-text/input__label-text.pug
 include __input/input__input.pug
 include __label/input__label.pug
@@ -7,5 +9,9 @@ mixin input(modifier)
       - modifier = {"id": "empty__id"};
     if modifier["id"] == undefined
       - modifier["id"] = "empty__id";
+    if attributes["class"] == undefined
+      - attributes["class"] = "";
     +input__label(modifier)(for=modifier.id)
     +input__input(modifier)(id=modifier.id)
+    if ( !(attributes.class.indexOf('input_with_languages')==-1) ) 
+      +input__select-languages(modifier)

@@ -1,3 +1,5 @@
+@import '__option-language/input__option-language';
+@import '__select-languages/input__select-languages';
 @import '__label-text/input__label-text';
 @import '__input/input__input';
 @import '__label/input__label';
@@ -6,6 +8,8 @@
   font-family: 'Montserrat' ,"Arial" , "Sans-serif";
   font-style: normal;
   line-height: 130%;
+  display: flex;
+  flex-wrap: wrap;
   @media (max-width: $md - 1px){
     width: 280px;
   }

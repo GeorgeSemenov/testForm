@@ -1,0 +1,6 @@
+mixin input__select-languages(modifier)
+  if modifier["languages"] == undefined
+    - modifier["languages"] = ["NO"];
+  select.input__select-languages&attributes(attributes)
+    each lang in modifier.languages
+      +input__option-language(lang)
