@@ -1,0 +1,16 @@
+include __button-to-order/form-container__button-to-order.pug
+include __form/form-container__form.pug
+include __title/form-container__title.pug
+include __text-container/form-container__text-container.pug
+include __img/form-container__img.pug
+include ../input/input.pug
+mixin form-container(modifier)
+  .form-container&attributes(attributes)
+    +form-container__img(modifier)
+    +form-container__text-container(modifier)
+    +input({
+        regularLabelText : "Ваше ",
+        coloredLabelText : "имя",
+        placeholder: "Алексей",
+        languages: ['RU','EN'],
+      })(class="input_with_languages")

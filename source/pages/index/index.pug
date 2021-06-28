@@ -1,5 +1,6 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/input/input.pug
+include ../../blocks/form-container/form-container.pug
 doctype html
 html(lang="ru")
   head
@@ -10,9 +11,4 @@ html(lang="ru")
     +favicon()
   body
     main
-      +input({
-        regularLabelText : "Ваше ",
-        coloredLabelText : "имя",
-        placeholder: "Алексей",
-        languages: ['RU','EN'],
-      })(class="input_with_languages")
+      +form-container({})
