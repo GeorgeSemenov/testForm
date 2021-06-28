@@ -11,4 +11,25 @@ html(lang="ru")
     +favicon()
   body
     main
-      +form-container({})
+      +form-container({
+        mixins: [
+          {
+            name: "input",
+            regularLabelText : "Ваше ",
+            coloredLabelText : "имя",
+            placeholder: "Алексей",
+          },
+          {
+            name: 'input',
+            regularLabelText : "Ваш ",
+            coloredLabelText : "телефон",
+            placeholder: "+7 (123) 456 78-90",
+            languages: ['RU','EN'],
+            modifiers: 'input_with_languages'
+          },
+          {
+            name: 'button',
+            text: "Заказать"
+          }
+        ]
+      })

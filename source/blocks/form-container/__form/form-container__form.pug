@@ -1,2 +1,8 @@
 mixin form-container__form(modifier)
-  .form-container__form&attributes(attributes)
+  if modifier["mixins"] == undefined
+    - modifier["mixins"] = [{name: "input",coloredLabelText : "mixins is empty"}];
+  form.form-container__form&attributes(attributes)
+    each mixin in modifier.mixins
+      if mixin["modifiers"] == undefined
+        - mixin["modifiers"] = "";
+      +#{mixin.name}(mixin)(class=mixin.modifiers)

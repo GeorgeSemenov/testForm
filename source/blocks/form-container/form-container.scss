@@ -1,8 +1,10 @@
-@import '__button-to-order/form-container__button-to-order';
+@import '__img-container/form-container__img-container';
+@import '__button/form-container__button';
 @import '__input/form-container__input';
 @import '__form/form-container__form';
 @import '__title/form-container__title';
 @import '__text-container/form-container__text-container';
 @import '__img/form-container__img';
 @import '../input/input';
+@import '../button/button';
 .form-container {}

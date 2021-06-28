@@ -1,0 +1,14 @@
+@import '__text/button__text';
+.button {
+  background-color: $btn--BGColor;
+  padding: 14px 44px 11px 20px;
+  width: 320px;
+  text-align: center;
+  border-radius: 5px;
+  &:hover{
+    background-color: darken($btn--BGColor, 10%)
+  }
+  &:active{
+    background-color: darken($btn--BGColor, 20%);
+  }
+}

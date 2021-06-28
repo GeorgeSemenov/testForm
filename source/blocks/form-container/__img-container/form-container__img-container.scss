@@ -1,0 +1,21 @@
+.form-container__img-container {
+  position: relative;
+  &:after, &:before{
+    font-family: 'Montserrat' ,"Arial" , "Sans-serif";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    // text-transform: uppercase;
+    color: $form-container__img-text--Color;
+    position: absolute;
+    left: 40px;
+  }
+  &:after{
+    bottom: 35px;
+    content: 'ECO';
+  }
+  &:before{
+    content: 'Reduslim';
+    top: 40px;
+  }
+}
