@@ -1,1 +1,11 @@
-.form-container__title {}
+.form-container__title {
+  font-family: 'Montserrat' ,"Arial" , "Sans-serif";
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: $form-container__title--Color;
+  padding-top: 31px;
+  padding-bottom: 26px;
+  background-color: $form-container__title--BGColor;
+}

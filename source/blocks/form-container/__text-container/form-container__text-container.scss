@@ -1,1 +1,6 @@
-.form-container__text-container {}
+.form-container__text-container {
+  width: 560px;
+  @media (max-width: $lg - 1px){
+    width: auto;
+  }
+}

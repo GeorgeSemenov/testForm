@@ -7,4 +7,6 @@
 @import '__img/form-container__img';
 @import '../input/input';
 @import '../button/button';
-.form-container {}
+.form-container {
+  display: flex;
+}

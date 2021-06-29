@@ -1,1 +1,6 @@
-.form-container__input {}
+.form-container__input {
+  margin-bottom: 22px;
+  &:nth-child(2){
+    margin-bottom: 37px;
+  }
+}

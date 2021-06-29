@@ -12,12 +12,14 @@ html(lang="ru")
   body
     main
       +form-container({
+        title: "Сделай шаг<br/>к выздоровлению",
         mixins: [
           {
             name: "input",
             regularLabelText : "Ваше ",
             coloredLabelText : "имя",
             placeholder: "Алексей",
+            modifiers: "form-container__input"
           },
           {
             name: 'input',
@@ -25,7 +27,7 @@ html(lang="ru")
             coloredLabelText : "телефон",
             placeholder: "+7 (123) 456 78-90",
             languages: ['RU','EN'],
-            modifiers: 'input_with_languages'
+            modifiers: 'input_with_languages form-container__input'
           },
           {
             name: 'button',
